@@ -1,0 +1,47 @@
+h1 {
+  font-weight: 700 !important;
+}
+
+/*container*/
+
+.container,
+.container-lrg,
+.container-sml {
+  margin: auto !important;
+  position: relative !important;
+  width: 100% !important;
+}
+.container-lrg {
+  max-width: 1020px !important;
+}
+.container {
+  max-width: 780px !important;
+}
+.container-sml {
+  max-width: 470px !important;
+}
+
+/* custom colors */
+.custom-color-aad24f82-7035-2873-9da7-4d6f46295be6 {
+  background-color: #2bd012;
+}
+
+.custom-color-aad24f82-7035-2873-9da7-4d6f46295be6 .primary-color {
+  color: #ffffff;
+}
+
+.custom-color-aad24f82-7035-2873-9da7-4d6f46295be6 .secondary-color {
+  color: #d7f9ff;
+}
+
+.custom-color-aad24f82-7035-2873-9da7-4d6f46295be6 .accent-bg {
+  background-color: #ffe600;
+}
+
+.custom-color-aad24f82-7035-2873-9da7-4d6f46295be6 .secondary-bg {
+  background-color: #2898fb;
+}
+
+.custom-color-aad24f82-7035-2873-9da7-4d6f46295be6 .svg-fill {
+  fill: #ffffff;
+}

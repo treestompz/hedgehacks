@@ -1,5 +1,4 @@
 'use client'
-import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import './css/lib/launchaco/AllTemplates.css'
@@ -99,101 +98,88 @@ function LandingPage() {
   }
 
   return (
-    <>
-      <Head>
-        <title>hedgehacks | GTrend Tool</title>
-        <meta
-          name="description"
-          content="Hedgehacks is a GTrend social arb trading tool to help you find your next big trade or idea."
-        />
-        {/* <link rel="stylesheet" href="/css/launchaco/fonts.css" />
-        <link rel="stylesheet" href="/css/launchaco/AllTemplates.css" />
-        <link rel="stylesheet" href="/css/launchaco/custom.css" /> */}
-      </Head>
-
-      <div className="dashboard-page-pure">
-        <div className="font-neutral">
-          <div className="green-flat">
-            <header className="header">
-              <div className="container-lrg">
-                <div className="flex col-12 spread">
+    <div className="dashboard-page-pure">
+      <div className="font-neutral">
+        <div className="green-flat">
+          <header className="header">
+            <div className="container-lrg">
+              <div className="flex col-12 spread">
+                <a
+                  target="#"
+                  className="logo primary-color launchaco-builder-hoverable logo"
+                >
+                  hedgehacks
+                </a>
+                {!isNewUser && (
+                  // TODO:
+                  // <Link
+                  //   href={DASHBOARD_PAGE_URL}
+                  //   className="nav-link secondary-color mr0"
+                  // >
+                  //   Go To App
+                  // </Link>
                   <a
-                    target="#"
-                    className="logo primary-color launchaco-builder-hoverable logo"
+                    href={DASHBOARD_PAGE_URL}
+                    className="nav-link secondary-color mr0"
                   >
-                    hedgehacks
+                    Go To App
                   </a>
-                  {!isNewUser && (
-                    // TODO:
-                    // <Link
-                    //   href={DASHBOARD_PAGE_URL}
-                    //   className="nav-link secondary-color mr0"
-                    // >
-                    //   Go To App
-                    // </Link>
-                    <a
-                      href={DASHBOARD_PAGE_URL}
-                      className="nav-link secondary-color mr0"
-                    >
-                      Go To App
-                    </a>
-                  )}
-                </div>
+                )}
               </div>
-            </header>
-            <section className="section">
-              <div className="container mb40">
-                <div className="col-12 text-center">
-                  <h1 className="heading-lrg primary-color launchaco-builder-hoverable">
-                    Use Search Data To Predict The Future 📈🚀
-                  </h1>
-                  <h2 className="subheading secondary-color mt20 launchaco-builder-hoverable font400bro">
-                    hedgehacks helps you track GTrend search engine data to find
-                    your next big trade or idea. And it&apos;s FREE!
-                  </h2>
-                  <div className="mt40">{renderTopCtaLink()}</div>
-                </div>
+            </div>
+          </header>
+          <section className="section">
+            <div className="container mb40">
+              <div className="col-12 text-center">
+                <h1 className="heading-lrg primary-color launchaco-builder-hoverable">
+                  Use Search Data To Predict The Future 📈🚀
+                </h1>
+                <h2 className="subheading secondary-color mt20 launchaco-builder-hoverable font400bro">
+                  hedgehacks helps you track GTrend search engine data to find
+                  your next big trade or idea. And it&apos;s FREE!
+                </h2>
+                <div className="mt40">{renderTopCtaLink()}</div>
               </div>
-              <div className="container-lrg">
-                <div className="col-12">
-                  <div className="browser mt75 launchaco-builder-hoverable">
-                    <div className="mask">
-                      <img
-                        src={BROWSER_EXAMPLE_IMG}
-                        alt="Screenshot of App in Browser"
-                        className="mask-img"
-                      />
-                    </div>
+            </div>
+            <div className="container-lrg">
+              <div className="col-12">
+                <div className="browser mt75 launchaco-builder-hoverable">
+                  <div className="mask">
+                    <img
+                      src={BROWSER_EXAMPLE_IMG}
+                      alt="Screenshot of App in Browser"
+                      className="mask-img"
+                    />
                   </div>
                 </div>
               </div>
-            </section>
-          </div>
-
-          <section
-            id="cta-2"
-            className="section custom-color-aad24f82-7035-2873-9da7-4d6f46295be6"
-          >
-            <div className="container text-center">
-              <div className="col-12">
-                <h4 className="heading-lrg primary-color launchaco-builder-hoverable">
-                  Find Your Next Trade Now!
-                </h4>
-                <div className="mt40">{renderBottomCtaLink()}</div>
-              </div>
             </div>
           </section>
+        </div>
 
-          <div className="col-12">
-            <p className="secondary-color mt20 ">
-              Nothing related to hedgehacks should be considered investment
-              advice. The site is provided as-is and could have bugs. Do your
-              own research and talk to your financial advisor.
-            </p>
+        <section
+          id="cta-2"
+          className="section custom-color-aad24f82-7035-2873-9da7-4d6f46295be6"
+        >
+          <div className="container text-center">
+            <div className="col-12">
+              <h4 className="heading-lrg primary-color launchaco-builder-hoverable">
+                Find Your Next Trade Now!
+              </h4>
+              <div className="mt40">{renderBottomCtaLink()}</div>
+            </div>
           </div>
+        </section>
+
+        <div className="col-12">
+          <p className="secondary-color mt20 ">
+            Nothing related to hedgehacks should be considered investment
+            advice. The site is provided as-is and could have bugs. Do your own
+            research and talk to your financial advisor.
+          </p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 export default LandingPage

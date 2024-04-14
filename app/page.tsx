@@ -18,6 +18,7 @@ const topCtaButtonStyle = {
   backgroundColor: '#336bff',
   fontWeight: 600,
 }
+
 const bottomCtaButtonStyle = {
   fontSize: '22px',
   fontWeight: 600,

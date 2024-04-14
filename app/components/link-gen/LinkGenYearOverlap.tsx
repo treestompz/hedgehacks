@@ -85,16 +85,17 @@ export const getYearOverlapTimeRangesArray = (
 
   return arr
 }
+
+const labelStyle = {
+  color: '#fff',
+  fontSize: '16px',
+}
+
 function LinkGenYearOverlap({
   refreshAllGroups,
   onReadyToClose,
   prepopulatedGroupName,
 }: Props) {
-  const labelStyle = {
-    color: '#fff',
-    fontSize: '16px',
-  }
-
   const [rowCounter, setRowCounter] = useState(2)
   const { register, handleSubmit, control, reset } =
     useForm<YearOverlapFormInputs>()

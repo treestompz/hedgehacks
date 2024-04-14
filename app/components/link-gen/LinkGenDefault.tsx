@@ -44,16 +44,16 @@ export const getDefaultTermsArray = (data: DefaultFormInputs): string[] => {
   return arr
 }
 
+const labelStyle = {
+  color: '#fff',
+  fontSize: '16px',
+}
+
 export default function LinkGenDefault({
   refreshAllGroups,
   onReadyToClose,
   prepopulatedGroupName,
 }: Props) {
-  const labelStyle = {
-    color: '#fff',
-    fontSize: '16px',
-  }
-
   const [termFormCounter, setTermFormCounter] = useState(1)
   const { register, handleSubmit, control, reset } =
     useForm<DefaultFormInputs>()

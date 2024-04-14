@@ -101,7 +101,6 @@ function LinkGenYearOverlap({
     useForm<YearOverlapFormInputs>()
 
   const onAddAnotherTermClick = () => {
-    console.log('onAddAnotherTermClick')
     setRowCounter(rowCounter + 1)
   }
 
@@ -109,7 +108,7 @@ function LinkGenYearOverlap({
     let terms = getYearOverlapTermsArray(data)
 
     if (terms.length <= 1) {
-      return console.log('onSubmit cancelled because terms 0.')
+      return
     }
 
     let locations = getYearOverlapLocationsArray(data)
@@ -134,9 +133,6 @@ function LinkGenYearOverlap({
       url,
     }
 
-    console.log(linkObj)
-
-    // make call to LINKDB
     LINKDB.create(groupObj, linkObj)
 
     onReadyToClose()

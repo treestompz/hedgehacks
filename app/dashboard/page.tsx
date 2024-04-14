@@ -32,7 +32,6 @@ function DashboardPage() {
 
   const refreshAllGroups = () => {
     let groups = LINKDB.getAllGroups()
-    console.log(groups)
     setGroups(groups)
   }
 

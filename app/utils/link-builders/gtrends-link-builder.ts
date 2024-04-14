@@ -24,7 +24,6 @@ export const buildGTrendPageLink = (
     params.set('geo', 'Worldwide')
   }
 
-  // timeRange
   if (timeRanges.length > 0) {
     params.set('date', timeRanges[0])
   }

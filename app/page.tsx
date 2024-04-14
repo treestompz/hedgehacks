@@ -28,7 +28,6 @@ function LandingPage() {
   const [isNewUser, setIsNewUser] = useState(true)
 
   useEffect(() => {
-    console.log('checkForNewUser')
     let groups = LINKDB.getAllGroups()
     if (groups.length > 0) {
       setIsNewUser(false)

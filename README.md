@@ -1,3 +1,3 @@
 # hedgehacks
 
-![Welcome Video](https://hedgehacks.com/video/welcome.gif)
+![Welcome Video](https://hedgehacks.com/gif/welcome.gif)
